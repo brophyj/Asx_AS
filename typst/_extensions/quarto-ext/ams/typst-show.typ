@@ -1,0 +1,1 @@
+/* typst-show.typ — assumed compatible and unchanged */

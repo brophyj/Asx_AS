@@ -1,0 +1,384 @@
+---
+title: "Transcatheter aortic valve replacement for asymptomatic aortic stenosis - A systemic review and Bayesian meta-analysis "
+author: 
+  - name: James Brophy MD PhD
+    affiliation: McGill University
+    roles: conception, analysis, writing
+    orcid: 0000-0001-8049-6875
+    email: james.brophy@mcgill.ca
+    corresponding: true
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+format:
+  typst: default
+  docx: default
+  html:
+    code-fold: true
+    code-summary: "Show the code"
+    css: custom.scss
+editor: visual
+interactive: false
+bibliography: bib.bib
+csl: vancouver.csl
+---
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+
+## Title page
+
+Transcatheter aortic valve replacement for asymptomatic aortic stenosis - A systemic review and Bayesian meta-analysis \
+ 
+
+James M. Brophy MD PhD \
+ 
+
+Address for Correspondence: \
+ \
+James Brophy MEng MD FRCP(c) FACC FCCS FCAHS PhD  \
+Professor of Medicine & Epidemiology (McGill)  \
+Senior Scientist, Research Institute of McGill University Health Centre  \
+Centre for Health Outcomes Research (CORE)  \
+5252 Boul. de Maisonneuve West Room 2B.37  \
+Montreal QC H4A 3S5  
+
+Total word count: ~2990 words (excluding title, abstract, and references)     
+
+Abstract word count: 304 words     
+
+Tables: 2     
+
+Figures: 4     
+
+Supplemental Figures: 4    
+
+Funding: This work was unfunded. 
+
+Conflicts of interest: The author has no conflicts of interest to report. 
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+## Key Points
+
+Question: Does early intervention for severe asymptomatic aortic stenosis improve patient outcomes compared to clinical surveillance?  \
+ 
+
+Findings: This meta-analysis with reconstructed simulated individual patient level data suggests some of the benefits previously attributable to early interventional efficacy are likely due to bias from unblinded study designs of subjective outcomes. A one-year landmark meta-analysis that minimizes possible early unblinding bias showed no definitive long term benefit for early intervention compared to clinical surveillance for the primary composite outcome of mortality and cardiovascular hospitalizations (RR 0.61, 95% CI 0.28 - 1.11), suggesting that further evidence is required to resolve the outstanding uncertainties. 
+
+Meaning: After accounting for possible early surveillance bias, landmark meta-analysis shows no clear evidence for longer term benefits for early intervention compared to clinical surveillance for asymptomatic aortic stenosis. Further evidence is required to resolve the outstanding uncertainties before a change in the current guidelines for treating asymptomatic aortic stenosis can be supported. 
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+## Abstract
+
+Background: Using aggregated data, multiple recent meta-analyses have concluded that early aortic valve replacement (AVR) was associated with reduced cardiovascular events compared to clinical surveillance for severe asymptomatic aortic stenosis. However, individual patient data was not used and the possibility and extent of bias due to unblinded trial designs has not been not considered.   
+
+Methods: A systematic review of randomized clinical trials (RCTs) comparing early AVR to clinical surveillance (CS) was performed. The primary outcome was mortality and unplanned cardiac hospitalization. Individual patient level data was reconstructed permitting the investigation of possible early unblinding bias. Bayesian (hierarchical) analyses, including a one-year landmark analyses, were performed separately for each trial and combined in a meta-analysis.   
+
+Results: Four RCTs were identified. The pooled estimated HR for the long term primary outcome was hazard ratio (HR) 0.53 (95% credible interval (CrI) 0.25 - 1.20) and the predicted HR interval for the next study was HR 0.53 (95% CrI 0.07 - 1.39) with the increased uncertainty arising from the clinical and statistical between study heterogeneity. Only the EARLY_TAVR trial showed improved outcomes in the first year following randomization (HR 0.34, 95% CrI 0.24 - 0.46), driven by a 142% increase in the crossover rate compared to previous SAVR trials.  A one year landmark analysis showed no long term benefit for AVR compared to CS for the primary outcome of mortality and cardiovascular hospitalizations for any individual study or for the pooled result (RR 0.62, 95% CI 0.27 - 1.07).   
+
+Conclusions and Relevance: The early benefit for TAVR in asymptomatic patients with severe aortic stenosis is possibly partially driven by performance bias. One-year landmark analysis showed no definitive longer term clinical benefit  for early AVR compared to CS and further research is required before early AVR  for asymptomatic aortic stenosis patients can become the new standard of care.
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+## Introduction
+
+Surgical aortic valve replacement (SAVR) or transcatheter aortic vale replacement (TAVR) are established aortic valve treatments (AVR) for patients with symptomatic aortic stenosis (AS). Following a natural history study of AS[@RN50], it was concluded 35 years ago that "operative treatment is the most common cause of sudden death in asymptomatic patients with AS" and consequently it has been standard practice to wait for the appearance of symptoms before proposing an intervention. However a recent viewpoint[@RN33], co-authored by one of the earlier authors[@RN50] concluded "... the time has come to recommend AVR for asymptomatic patients with severe AS". In support of this evolving viewpoint, four recent randomized clinical trials[@RN29; @RN34; @RN38; @RN7079] were cited. Five meta-analyses[@RN53; @RN57; @RN7641; @RN7642; @RN52]  have also confirmed the benefits of early AVR interventions with one [@RN57] suggesting clinical guidelines should be revised accordingly. However, the benefits in the largest trial[@RN29] were driven by early crossovers from the clinical surveillance (CS) arm in the first six months following randomization which seems unusual given that all patients were initially assessed as asymptomatic by baseline exercise testing. As a major shift in clinical practice is being contemplated, a critical re-examination of the underlying evidence base, including the uncertainty due to possible biases, seems appropriate. 
+
+## Methods
+
+Four RCTs[@RN29; @RN34; @RN38; @RN7079] were identified from five recent systematic reviews and meta-analyses[@RN53; @RN57; @RN7641; @RN7642; @RN52] of AVR versus CS in asymptomatic patients with severe aortic stenosis. The trial characteristics and outcome data from these trials have been extracted directly from the original publications. In addition the literature search was updated to October 15 2025 using the search strategy in Supplemental Figure 1.  
+
+All the previous meta-analyses assumed efficacy parameters while unknown were fixed, thereby ignoring any inherent variability. None of the previous meta-analyses provided prediction intervals which have been shown to provide important adjunctive information regarding the likely outcome for the next study(12,13)). Because a new study can deviate from the average effect (especially if heterogeneity is large), the prediction interval is typically wider than the interval around the pooled estimate. A Bayesian hierarchical meta-analysis analysis is a natural extension of the frequentist random-effects model accounting for the parameter uncertainty, allows principaled borrowing of information between studies and provides realistic prediction intervals for the next study  
+
+To examine the long term benefits of early AVR, independently of possible confounding by early crossovers due to unblinded study designs in the evaluation of subjective outcomes, a one year landmark analysis was performed. This approach allows for the examination of outcomes after a specified time point, thereby reducing any potential bias from early unblinded crossover effects. As individual trialists refused to share their data[@RN29; @RN38], the landmark analysis was performed using simulated individual patient data (IPD) reconstructed from the published cumulative incidence curves[@RN29; @RN34; @RN38; @RN7079] and established digital reconstruction methods[@RN5762]. Survival curves were digitized with WebPlotDigitizer[@WebPlotDigitizer] to extract time–event coordinates, cumulative incidence values, and numbers at risk for each study arm. These data were then transformed into individual-level event and censoring times consistent with the published summary data. This approach allows for a nuanced analysis of time-to-event data for the primary composite endpoint of mortality and unplanned cardiovascular hospitalization,  providing a means to account for any potential early treatment biases. 
+
+This approach assumes uniform censoring within intervals and constant hazard between reported time points, and minor digitization errors are also possible. However, when Kaplan–Meier steps correspond to frequent events, as in the present studies, the effect of these assumptions on estimated hazard ratios are expected to be small. Reconstructed curves were visually verified to overlay against the originals, and the simulated IPD showed reasonable approximations to the published Cox proportional hazards models. This procedure allowed one-year landmark analyses for the primary outcome of mortality and unplanned cardiovascular hospitalization.          
+
+Subsequently, two Bayesian hierarchical models were constructed to estimate between-study effects. The first model, a normal–normal random-effects meta-analysis, used the trial-level log HRs and standard errors for the primary outcome and weakly informative priors: a Normal(0, 1.5) prior on the overall mean effect and a Normal(0, 0.5) prior on the between-study standard deviation, thereby allowing the observed data to dominate. This model provided a pooled (average) effect and prediction interval for future studies. The second model, focused on early crossover rates, was a binomial-logit hierarchical model with the number of crossovers in the first year following randomization as the outcome and the total randomized patients as the denominator. Again we used only vaguely informative priors, a Normal(0, 1.5) prior for the log-odds intercept and a Cauchy(0, 1) prior for the between-study heterogeneity. Both models included random intercepts for each study. 
+
+Analyses were performed using the R[@R] ecosystem, and all statistical code is available [@RN7645]. Bayesian models were implemented using the `brms` package[@brms], a high-level front-end interface for Stan[@Stan2024], a probabilistic programming language that employs Hamiltonian Monte Carlo (HMC) sampling with the No-U-Turn Sampler (NUTS) algorithm for efficient exploration of posterior distributions. Weakly informative priors were specified to allow the data to dominate while maintaining numerical stability. Posterior estimation was performed via the cmdstanr package[@cmdstanr], which interfaces directly with Stan and provides enhanced computational performance and diagnostic capabilities. Models were fit using four parallel chains, each with 1,000 warm-up and 1,000 sampling iterations. Convergence was evaluated using the Gelman–Rubin statistic ($\hat{R}$) and effective sample size diagnostics. Posterior summaries are reported as medians with 95% credible intervals (CrI). The posterior distributions were visualized using the `ggplot2`[@ggplot2] and `ggdist`[@ggdist] packages to generate half-eye plots, providing clear graphical representations of study-specific, pooled, and predictive estimates.     
+
+## Results
+
+The search strategy to identify any additional new trials of early intervention compared to CS in asymptomatic AS patients is shown in Supplemental Figure 1. The characteristics of the four identified RCTs are shown in Table 1. Each study examined a population with severe AS, performed baseline exercise stress testing to assure asymptomatic status,  and randomized subjects to early AVR treatment or CS. Nevertheless, there are major differences between the studies, including the time frames when the subjects were randomized (July 2010 to December 2021), variations in the primary outcome, duration of follow-up (3.5 to 6.2 years), choice of the the active treatment arm, crossover rates, as well as the intensity and type of follow-up to detect the endpoints. EARLY_TAVR[@RN29] is the largest, almost twice the combined size of the other RCTs[@RN34; @RN38; @RN7079], the most contemporary, exclusively used TAVR as the intervention and was performed in uniquely North American settings. The variability in crossover rates in the first six to twelve months following randomization is striking with an average of 19.2% in the earlier predominately surgery intervention trials [@RN34; @RN38; @RN7079] and 46.5% in the EARLY_TAVR[@RN29] trial (Table 1, Figure 1A). This discordance is especially remarkable as all study populations were grossly similar with their asymptomatic status confirmed with baseline exercise testing.  
+
+This difference in crossover rates is demonstrated graphically in Figure 1A which also shows the contrast between the pooled crossover rates from the first three trials where the treatment arm was largely surgical with those from EARLY_TAVR[@RN29] with a purely TAVR intervention arm. The probability that the difference between the pooled crossover and EARLY_TAVR rates exceeds certain values is shown in Figure 1B. For example, it is almost certain that the crossover difference between the surgical and TAVR studies was at least as large as an absolute 15% difference in the first year following randomization.  
+
+The hazard ratios as calculated from the simulated IPD datasets are displayed in Table 2 with an acceptable comparison to the published hazard ratios for each trial. Table 2 also shows that the summary pooled and predicted values from the simulated IPD data which also exhibits good concordance with results from the published data. The largest trial, EARLY_TAVR[@RN29], had a published HR of 0.50 (95% CI 0.40, 0.63; P \< 0.001) while the simulated HR is 0.57, (95% CI 0.46, 0.70; P \< 0.001). The simulated IPD results from the other three trials also demonstrated good concordance with the published results. Supplemental Figure 2 shows the reconstructed cumulative incidence rates for the four trials which  visually closely match the published figures[@RN29; @RN34; @RN38; @RN7079]. Based on the published data, the Bayesian pooled HR is 0.53 (95% CI 0.25, 1.20) and the predicted interval for the next study is 0.53 (95% CI 0.07, 1.39) (Table 2, Figure 2). The wider prediction interval reflects the heterogeneity between the trials, especially the difference in early crossover rates, and predicts the range for the next study, which is obviously not constrained to the range of pooled (average) estimates.   
+
+An advantage of using IPD, not available with aggregate data, is the ability to perform additional time dependent analyses. The large observed variations in early crossover rates, a key component of the primary composite outcome of mortality and unplanned cardiac hospitalizations, raises the possibility these observed differences were due to a performance, due to unblinding, bias rather than a true treatment effect. In this context a one year landmark analysis, which excludes events in the first year and is only possible with IPD, may be informative. The one year landmark analysis showed no evidence of long term benefit in EARLY_TAVR (HR 0.96, 95% CI 0.69, 1.29) and little evidence for benefit from the pooled estimate (HR 0.62, 95% CI 0.27, 1.07) (Figure 3). For EARLY_TAVR[@RN29] the one year landmark cumulative incidence curves are essentially parallel (Supplemental Figure 3), confirming after accounting for early crossovers, an absence of evidence for long term benefits for early TAVR over CS. 
+
+From the reverse perspective, EARLY_TAVR trial [@RN29] displayed a highly significant overall reduction in the primary composite outcome with early intervention when the study results were truncated after the first year following randomization (HR 0.34, 95%CI 0.24, 46). This early benefit in the first year following randomization was not seen with the other trials (Supplemental Figure 3). 
+
+No individual trial was powered for total mortality and even the meta-analysis  provides no conclusive evidence for any mortality benefit for early intervention with a pooled mortality HR of 0.71 (95% CI 0.35, 1.17) (Figure 4). The mortality prediction interval for the next study is 0.72 (95% CI 0.07, 1.77) which reflects the large uncertainty in the next study's outcome given the sparsity of deaths and the observed variability in the existing trials.
+
+## Discussion
+
+Four randomized trials investigating the early AVR treatment of severe, asymptomatic AS compared to CS were identified[@RN29; @RN34; @RN38; @RN7079]. In contrast to the previous meta-analyses[@RN53; @RN57; @RN7641; @RN7642; @RN52] that concluded early AVR was associated with a significant reduction in the primary composite outcome of unplanned cardiovascular hospitalization, stroke or mortality, this meta-analysis suggests the benefit from early AVR remains uncertain. The pooled average hazard ratio for the primary outcome of mortality and cardiovascular hospitalizations was 0.53 (95% CI 0.25, 1.20) and the prediction interval for the next study was 0.53 (95% CI 0.07, 1.39), underscoring substantial uncertainty regarding the benefits of early AVR compared to CS. Similarly, definitive evidence for a mortality benefit was lacking as shown by pooled and prediction intervals.  
+
+This study also suggests that a large portion of the benefit observed in the largest trial, EARLY_TAVR[@RN29], may be due to performance bias from its unblinded design rather than a true treatment effect. EARLY_TAVR[@RN29] was the only trial with TAVR as the exclusive active treatment intervention arm and demonstrated a much higher crossover rate in the first year following randomization compared to the other trials (Figure 1A) with almost complete certainty of an absolute difference of at least 15% in the first year following randomization (Figure 1B). This early benefit, driven by a nearly 1.5 fold increase in early TAVR crossovers compared to earlier crossover rates is hard to rationalize clinhically, as subjects in all trials had severe aortic stenosis and were confirmed asymptomatic at baseline with negative exercise testing.  Why then did EARLY_TAVR[@RN29] CS patients experience higher one year crossover rates? If early TAVR truly reduces cardiac hospitalizations, why then did this benefit not continue to accrue for CS patients after the first six to twelve months?  
+
+While the landmark pooled results from all trials combined do suggest a possible reduction in the long term, the wide confidence intervals and prediction interval underscore the large remaining uncertainty, emphasizing that confirmatory evidence is required before definitive conclusions can be drawn. The results from the landmark analysis showing no definitive evidence for benefit are in contrast to the positive results emanating from the previous aggregate data meta-analyses[@RN53; @RN57; @RN7641; @RN7642; @RN52] which did not account for any time varying hazard ratios. 
+
+Given these observations and also that the natural history of AS has likely not dramatically evolved in the decade since the first three trials were performed, it becomes necessary to seek other explanations for the large Early_TAVR crossover rate[@RN29]. What has altered in the past decade is the increasing availability of TAVR as a less invasive alternative to SAVR. Consequently our threshold to intervene has likely changed as “primum non nocere“ in asymptomatic patients becomes less of an issue with the up front ease and safety of TAVR, resulting in less physical and emotional patient impact comapred to SAVR. It is relatively easy to see how a changing intervention threshold combined with the unblinded design of EARLY_TAVR[@RN29] could have influenced the crossover rates and consequently cardiac hospitalizations. Historically unblinded clinical trials with subjective dependent outcomes have been document to have exaggerated effects sizes[@RN54; @RN55].  
+
+Specifically for EARLY_TAVR[@RN29], there are four possible mechanisms that unblindedness, rather than TAVR effectiveness, could have contributed to the observed early differences in crossovers and hospitalization rates. As all research participants sign an informed consent where the risks and benefits of trial participation are explained, the CS group knew they had severe disease and knew they were not being treated. This could increase anxiety and favor the conversion from an asymptomatic individual to a symptomatic patient — even in the absence of true progression of cardiac disease and symptoms. Similarly the research staff of interventionalists, who are likely "believers" in the value of TAVR, knew which patients were not treated thereby increasing their probability of attributing any symptoms, whether of cardiac origin or not, to the underlying aortic stenosis. On the other hand, the early treatment group knew they were “fixed” and might be less likely to consult for any symptoms, again whether cardiac or not. The medical staff of the early TAVR patients knowing these patients had been treated might also be less inclined to attribute any symptoms to the cardiac disease. Importantly, all four of these possible scenarios would lead to a potential over-estimate of true underlying differential hospitalization rates between early treatment and CS, resulting in a spurious assessment of early TAVR benefit. 
+
+The present analysis is limited by the unwillingness of the original trialists to share their data sharing[@RN29; @RN38] and hence the dependency on reconstructed data algorithms[@RN5762] with their inherent assumptions of uniform censoring within intervals and constant hazard between reported time points, in addition to minor digitization errors. However, the ability to reasonably reproduce the individual published hazard ratios and cumulative incidence rates does provides some assurance that the early censored and landmark analyses reported herein are approximately valid. On the other hand, a strength of this meta-analysis is its use of survival data which is generally preferred for meta‐analyses of time‐to-event outcomes as it allows for proper modeling of any risk changes over time. Previous meta-analyses[@RN53; @RN57; @RN7641; @RN7642; @RN52] used aggregate data and were therefore unable to correct for any possibility of varying hazard rates of any etiology, whether due to bias or other causes. The ability to perform time to event meta-analysis enables a one year landmark analysis that adjusts for early time varying hazard ratios allowing a more nuanced and powerful analysis of long term outcomes. 
+
+Ultimately, the reader must decide whether EARLY_TAVR's[@RN29] large and early benefits, which have dominated previous meta-analyses, are due to a true benefit or from the bias of an unblinded trial design. Which TAVR benefit scenario seems more likely, one with the benefit occurring early without longer term benefits or one where the benefit accrues throughout follow-up at a quasi constant rate or perhaps even slightly increasing with time as the valve disease progresses? If TAVR has a real impact, logic would seem to dictate the later scenario is more likely. However, the landmark analysis is compatible with former scenario, suggesting the observed difference is perhaps more due to performance bias rather than an actual benefit from early intervention.  
+
+Based on the Cochrane risk of bias tool[@RN58], previous meta-analyses[@RN53; @RN57; @RN7641; @RN7642; @RN52] concluded these trials were at low risk of bias. While this tool provides general guidelines for bias evaluation, the tool can't possibly codify all possible unique biases that may impact individual trials and doesn't provides any approaches to quantify and adjust for possible biases if they are thought to exist. Based on this example, it may be that simply checking boxes in the Cochrane RoB tool is inadequate to identify and handle meaningful biases. 
+
+In conclusion, a detailed examination of the heterogeneity of the early outcomes between the four completed randomized trials of early intervention versus CS in asymptomatic AS suggests a potential performance bias in the most recent and largest TAVR based trial[@RN29]. The unblinded nature of earlier trials was less problematic as the crossover required open heart surgery, a weightier decision than a TAVR procedure with a possible next day discharge. A proposed correction for this bias involving a one year landmark analysis shows no definitive evidence for long term benefit following early AVR. The previous meta-analyses[@RN53; @RN57; @RN7641; @RN7642; @RN52] have not discussed this time varying heterogeneity and possible bias. These results are justifing viewpoints[@RN33] calling for a modification of current guidelines[@OTTO2021e25] to favor early active intervention over CS as the treatment of choice for severe asymptomatic aortic stenosis. To be clear, the present analysis certainly does not claim there are no benefits to early AVR intervention for asymptomatic patients but rather asserts that further research is required to reach more definite conclusions. In the interim, the suggestion that early intervention should become the new norm appears premature and lacks convincing evidence.
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+## Tables
+
+```{r table1, warning=FALSE, message=FALSE, echo=FALSE}
+library(gt)
+library(dplyr)
+library(readr)
+library(stringr)
+
+# Load and clean data
+data_meta <- read_csv("Input/data_meta1y.csv")
+
+# Clean and rename columns
+names(data_meta) <- gsub("_", " ", names(data_meta))
+colnames(data_meta)[1] <- "Study (n1=intervention, n2=surveillance)"
+colnames(data_meta)[6] <- "Median Follow-up (years)"
+colnames(data_meta)[7] <- "Crossovers study end (n)"
+colnames(data_meta)[8] <- "Crossovers 12 months (n)"
+
+# Extract n2 (second number inside parentheses)
+data_meta <- data_meta %>%
+  mutate(
+    n2 = str_extract(`Study (n1=intervention, n2=surveillance)`, "\\(\\d+,\\s*\\d+\\)") %>%
+      str_remove_all("[()]") %>%
+      str_split(",\\s*") %>%
+      sapply(function(x) as.numeric(x[2]))
+  )
+
+# Create new column: Crossovers 6 months (%)
+data_meta <- data_meta %>%
+  mutate(`Crossovers 12 months (%)` = round(`Crossovers 12 months (n)` / n2 * 100, 1)) %>%
+  select(
+    1:8,
+    `Crossovers 12 months (%)`,
+    everything()
+  )
+
+# Create gt table
+gt_table <- gt(data_meta[, c(1,3:7,9)]) %>%
+  cols_width(
+    1 ~ px(120),
+    2:3 ~ px(65),
+    4 ~ px(75),
+    5:7 ~ px(65)
+  ) %>%
+  tab_header(
+    title = "Table 1 Summary of Randomized Clinical Trials",
+    subtitle = "Key summary data from early AS intervention trials."
+  ) %>%
+  tab_source_note(
+    source_note = "12 month crossovers for RECOVERY are approximated by assuming a Gamma distribution as crossovers are right skewed. Gamma paramters estimated from published median time to crossovers."
+  ) %>%
+  tab_options(
+    table.font.size = px(10),
+    data_row.padding = px(5)
+  )
+
+# Output to screen gives unwanted extra numbering
+# gt_table
+
+
+# Save as PNG
+gtsave(gt_table, "Output/Table1_12mo.png", expand = 24)
+knitr::include_graphics("Output/Table1_12mo.png")
+```
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+```{r table2, warning=FALSE, message=FALSE, echo=FALSE}
+library(gt)
+library(dplyr)
+library(dplyr)
+library(gt)
+
+# Read properly structured CSV with no header
+# Input/data_meta_HR.csv is created from the R object ***_censored_landmark1.R
+# output entered manually
+
+data_meta_HR <- read.csv("Input/data_meta_HR_corrected.csv", header = FALSE, stringsAsFactors = FALSE)
+# remove straight and curly double-quotes, then trim
+data_meta_HR[] <- lapply(data_meta_HR, \(x) if (is.character(x)) trimws(gsub('[“”"]', '', x)) else x)
+
+# Assign proper column names
+colnames(data_meta_HR) <- c(
+  "Study",
+  "Published HR (95% CI, P value)",
+  "Calculated IPD HR (95% CI, P value)",
+  "Censored 1 Yr HR (95% CI, P value)",
+  "Landmark 1 Yr HR (95% CI, P value)"
+)
+
+# Create gt table
+gt_table <- gt(data_meta_HR[,1:3]) %>%
+  cols_width(
+    Study ~ px(140),
+    everything() ~ px(120)
+  ) %>%
+  tab_header(
+    title = "Table 2 Published and Calculated HRs",
+    subtitle = "Primary outcome from early AS intervention trials."
+  ) %>%
+  tab_source_note(
+    source_note = md("HR = hazard ratio, CI = confidence interval, NA = not available due to insufficient data<br>Pooled and Predicted are Bayesian calculations (no p values)")
+  ) %>%
+  tab_options(
+    table.font.size = px(10),
+    data_row.padding = px(5)
+  )
+
+
+
+gtsave(gt_table,"Output/Table2.png", expand = 10)
+knitr::include_graphics("Output/Table2.png")
+
+```
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+## Figures
+
+```{r fig1, echo=FALSE, message=FALSE, warning=FALSE, fig.show='hold', out.width='100%', fig.align='center', fig.cap='Legend Figure 1- (A) - Crossover rates from CS in the first year following randomization for each trial and the pooled average from Bayesian hierarchical model for the three surgical intervention arms (AVATAR, EVOLVED, and RECOVERY). The median crossover rate from the pooled surgical trials was 19.2% (blue figure) while the analagous crossover rate for EARLY-TAVR was 46.5% (B) Probability that the difference in crossover rates between EARLY_TAVR and the pooled surgical trials exceeds certain values. For example, there it is almost certain that the absolute difference in crossover rates is at least 15% and a 96% probability that the difference is at least 20%.'}
+knitr::include_graphics("Output/xover_side_by_side.png")
+
+```
+
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+```{r fig2, message=FALSE, warning=FALSE, fig.height=12, echo=FALSE, fig.cap='Posterior probability distributions of hazard ratios (HR) for the primary composite outcome from individual trials and the Bayesian hierarchical meta-analysis. Blue densities depict the full uncertainty in each estimated HR, with wider regions indicating greater posterior probability. The black dot marks the posterior median (point estimate), while the thick and thin black lines indicate the 80% and 95% credible intervals, respectively. The vertical dashed line (HR = 1.0) denotes no difference between early intervention and clinical surveillance. The area under each curve to the left of this line represents the posterior probability of benefit with early intervention. Because the entire probability distribution is available, the probability of any specified benefit or harm can be directly calculated. Open dots show the observed study estimates, illustrating how Bayesian partial pooling “borrows strength” across studies, in a principled manner moving individual effects toward the overall mean and narrowing individual confidence intervals. The “Prediction” row shows the expected range of results for a future study.'}
+knitr::include_graphics("Output/Bayesian_MA_primary_posterior.png")
+```
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+```{r fig3, message=FALSE, warning=FALSE, fig.height=12, echo=FALSE, fig.cap='Posterior probability distributions of hazard ratios (HR) for the primary composite outcome from individual trials and the Bayesian hierarchical meta-analysis. Blue densities depict the full uncertainty in each estimated HR, with wider regions indicating greater posterior probability. The black dot marks the posterior median (point estimate), while the thick and thin black lines indicate the 80% and 95% credible intervals, respectively. The vertical dashed line (HR = 1.0) denotes no difference between early intervention and clinical surveillance. The area under each curve to the left of this line represents the posterior probability of benefit with early intervention. Because the entire probability distribution is available, the probability of any specified benefit or harm can be directly calculated. Open dots show the observed study estimates, illustrating how Bayesian partial pooling “borrows strength” across studies, in a principled manner moving individual effects toward the overall mean and narrowing individual confidence intervals. The “Prediction” row shows the expected range of results for a future study.'}
+knitr::include_graphics("Output/Bayesian_MA_primary_posteriorLandmark.png")
+```
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+```{r fig4, message=FALSE, warning=FALSE, fig.height=12,echo=FALSE, fig.cap='Posterior probability distributions of hazard ratios (HR) for the primary composite outcome from individual trials and the Bayesian hierarchical meta-analysis. Blue densities depict the full uncertainty in each estimated HR, with wider regions indicating greater posterior probability. The black dot marks the posterior median (point estimate), while the thick and thin black lines indicate the 80% and 95% credible intervals, respectively. The vertical dashed line (HR = 1.0) denotes no difference between early intervention and clinical surveillance. The area under each curve to the left of this line represents the posterior probability of benefit with early intervention. Because the entire probability distribution is available, the probability of any specified benefit or harm can be directly calculated. Open dots show the observed study estimates, illustrating how Bayesian partial pooling “borrows strength” across studies, in a principled manner moving individual effects toward the overall mean and narrowing individual confidence intervals. The “Prediction” row shows the expected range of results for a future study.'}
+knitr::include_graphics("Output/Bayesian_MA_mortality.png")
+```
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+## Supplemental material
+
+```{r supp_F1, message=FALSE, warning=FALSE, fig.height=12, echo=FALSE}
+knitr::include_graphics("Output/prisma_flowchart.png")
+
+```
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+```{r supp_F2, message=FALSE, warning=FALSE, fig.height=8, out.width='100%', echo=FALSE}
+
+library(ggplot2)
+library(dplyr)
+library(patchwork)
+
+source("CIplot.R")
+g1 <- CIplot("Input/RECOVERY_Ctl.csv", "Input/RECOVERY_Sx.csv", 
+         "surveillance", "surgery", "RECOVERY")
+
+g2 <- CIplot("Input/AVATAR_Ctl.csv", "Input/AVATAR_Sx.csv", 
+       "surveillance", "surgery", "AVATAR", time_unit = "months")
+
+g3 <- CIplot("Input/EVOLVED_Ctl.csv", "Input/EVOLVED_Sx.csv", 
+       "surveillance", "75% SAVR, 25% TAVR", "EVOLVED")
+
+
+g4 <- CIplot("Input/EARLY_Ctl1.csv", "Input/EARLY_TAVR1.csv", 
+       "surveillance", "TAVR", "EARLY_TAVR", max_y = 60)
+
+# Combine plots
+combined_plot <- g1 + g2 + g3 + g4 +
+  plot_annotation(title = 'Figure 2. Cumulative incidence plots of 4 RCTs \n(based on simulated data)') &
+  theme(plot.title = element_text(size = 16, face = "bold", hjust = 0.5))
+
+print(combined_plot)
+
+ggsave("Output/combined_plot_suppF2.png", combined_plot, width = 12, height = 8)
+
+```
+
+```{r supp_F3, echo=FALSE, fig.height=6, message=FALSE, warning=FALSE, fig.cap='Posterior probability distributions of hazard ratios (HR) for the primary composite outcome from individual trials and the Bayesian hierarchical meta-analysis restricted to the first year following randomization. Blue densities depict the full uncertainty in each estimated HR, with wider regions indicating greater posterior probability. The black dot marks the posterior median (point estimate), while the thick and thin black lines indicate the 80% and 95% credible intervals, respectively. The vertical dashed line (HR = 1.0) denotes no difference between early intervention and clinical surveillance. The area under each curve to the left of this line represents the posterior probability of benefit with early intervention. Because the entire probability distribution is available, the probability of any specified benefit or harm can be directly calculated. Open dots show the observed study estimates, illustrating how Bayesian partial pooling “borrows strength” across studies, in a principled manner moving individual effects toward the overall mean and narrowing individual confidence intervals. Notice that the EARLY_TAVR observed results (see open dots and confidence intervals) are markedly different from the other observed results. The average pooled estimate and prediction results for an expected future study that is truncated after one year of follow-up are also shown.'}
+
+knitr::include_graphics("Output/Bayesian_MA_primary_posterior1yr.png")
+```
+
+
+```{r supp_F4, message=FALSE, warning=FALSE, fig.height=6, echo=FALSE, fig.cap='Cumulative incidence plot for the one year landmark analysis of EARLY_TAVR trial based on simulated individual patient data. The plot shows the cumulative incidence of the primary composite outcome (mortality and unplanned cardiovascular hospitalization) starting from one year after randomization, comparing early TAVR intervention to clinical surveillance. The curves illustrate that after accounting for early events within the first year, the long-term outcomes between the two groups are similar, suggesting no significant long term benefit of early TAVR over clinical surveillance in this landmark analysis.'}
+
+source("CIplot_landmark.R")
+g5 <- CIplot_landmark("Input/Early_Ctl1.csv", "Input/Early_TAVR1.csv", "surveillance", "TAVR", "EARLY_TAVR", time_unit = "years", max_y = 60) 
+
+g5 +
+  plot_annotation(title = 'Supplemental Figure 4') &
+  theme(plot.title = element_text(size = 16, face = "bold", hjust = 0.5))
+
+# If you need to save the plot, you can use ggsave
+ggsave("Output/TAVR_landmark_plot.png", width = 12, height = 8)
+```
+
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+## References

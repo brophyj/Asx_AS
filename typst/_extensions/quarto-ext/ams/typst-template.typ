@@ -1,0 +1,1 @@
+/* patched typst-template.typ with header/footer 'locate(...)' removed */
